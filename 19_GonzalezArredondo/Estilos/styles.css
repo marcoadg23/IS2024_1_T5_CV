@@ -1,0 +1,88 @@
+html{
+    height: 100%;
+}
+body{
+    background-color: #fde9e9;
+    margin:0; /*Quitar margenes de los lados*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+}
+header{
+    background-color: #E5E0FF;
+    padding: 10px; /*Asi puedo quitarle el margen de arriba*/
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Spicy Rice', cursive;
+    /* font-family: 'Roboto', sans-serif; */
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul{
+    list-style: none;/*Para quitarle los puntitos a las listas*/
+    margin: 0%;
+    padding:0%;
+}
+header ul li{
+    display: inline;
+    margin:10px;
+}
+header ul li a{
+    text-decoration: none;/*Quitarle las rayitas a los links*/
+    color:black;/*color de las letras*/
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 1s ease;
+}
+ul li a:hover{
+    background-color: #7286D3;
+}
+.logo{
+    width: 50%;
+    border-radius: 20%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Lumanosimo', cursive;
+    align-items: center;
+    margin: 20px;
+    margin-top: 100px;
+
+}
+.PD{
+    align-self: flex-end;
+
+}
+footer{
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Spicy Rice', cursive;
+    background-color: #7286D3;
+}
+footer p a{
+    text-decoration: none;/*Quitarle las rayitas a los links*/
+    color:black;/*color de las letras*/
+    border-radius: 5px;
+    transition: 1s ease;
+}
+footer p{
+    font-size: 15px;
+}
+.seleccionado{
+    background-color: #7286D3;
+    border-radius: 5px;
+}

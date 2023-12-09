@@ -1,0 +1,1 @@
+alert("Usted esta entrando en la mejor pagina de internet da le clic en ok para continuar")

@@ -1,0 +1,8 @@
+.ima-contacto{
+    width: 20px;
+    height: 20px;
+}
+.contacto{
+    display: flex;
+    flex-direction: row;
+}

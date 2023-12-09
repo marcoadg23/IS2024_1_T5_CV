@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Listado de Carpetas</title>
+</head>
+<body>
+  <h1>Listado de Carpetas</h1>
+  <ul id="lista-carpetas"></ul>
+
+  <script>
+    // Función para obtener la lista de carpetas y generar enlaces
+    function obtenerCarpetas() {
+      fetch('.')
+        .then(response => response.text())
+        .then(text => {
+          const parser = new DOMParser();
+          const html = parser.parseFromString(text, 'text/html');
+          const listaCarpetas = html.querySelectorAll('a[href$="/"]');
+
+          const listaElementos = document.getElementById('lista-carpetas');
+
+          listaCarpetas.forEach(carpeta => {
+            const nombreCarpeta = carpeta.getAttribute('href').replace('/', '');
+            const elementoLista = document.createElement('li');
+            const enlace = document.createElement('a');
+            enlace.textContent = nombreCarpeta;
+            enlace.href = nombreCarpeta + '/index.html';
+            elementoLista.appendChild(enlace);
+            listaElementos.appendChild(elementoLista);
+          });
+        })
+        .catch(error => {
+          console.error('Error al obtener las carpetas:', error);
+        });
+    }
+
+    // Llamar a la función para obtener la lista al cargar la página
+    window.onload = obtenerCarpetas;
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.red-social {
+    margin: 0 15px;
+}
+
+.red-social a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.red-social a.logo-instagram {
+    background-image: url('images/instagram.webp'); /* Reemplaza con la ruta de tu logotipo */
+}
+
+.red-social a.logo-facebook {
+    background-image: url('images/facebook.webp'); /* Reemplaza con la ruta de tu logotipo */
+}
+
+.red-social a.logo-github {
+    background-image: url('images/github.png'); /* Reemplaza con la ruta de tu logotipo */
+}
+
+.red-social a:hover {
+    transform: scale(1.2); /* Aumenta el tamaño en un 20% al hacer hover */
+}

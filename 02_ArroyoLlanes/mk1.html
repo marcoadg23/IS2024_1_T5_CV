@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currículum Arroyo Llanes Miguel Alejandro</title>
+    <link rel="icon" href="Logo.png" />
+
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu {
+        display: flex;
+        margin-top: -10px;
+        justify-content: center;
+      }
+
+      .menu p {
+        margin-right: 2rem;
+        color: #002a73;
+        text-decoration: underline;
+        cursor: pointer;
+        background: black;
+        border: none;
+        padding: 10px 20px; 
+        color: azure;
+        font-size: 18px; 
+        font-weight: bold;
+        position: relative;
+        border-radius: 10px;
+        margin-bottom: 10px; 
+        transition: background 0.3s ease-in-out;
+      }
+
+      .menu p:hover::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          45deg,
+          red,
+          blue,
+          deeppink,
+          blue,
+          red,
+          blue,
+          deeppink,
+          blue
+        );
+        background-size: 800%;
+        border-radius: 12px;
+        filter: blur(8px);
+        animation: glowing 20s linear infinite;
+      }
+
+      .menu p:hover {
+        background: rgba(
+          0,
+          0,
+          0,
+          0.7
+        ); 
+      }
+
+      @keyframes glowing {
+        0% {
+          background-position: 0 0;
+        }
+        50% {
+          background-position: 400% 0;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
+
+      .content {
+        margin-top: 2rem;
+      }
+
+      [data-content] {
+        display: none;
+      }
+
+      .active[data-content] {
+        display: block;
+      }
+
+      header {
+        background-color: #003a73;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+        position: relative;
+      }
+
+      header img {
+        border-radius: 50%;
+        max-width: 100px;
+        position: center;
+      }
+
+      .instagram-icons img {
+        max-width: 30px;
+        margin-right: 5px;
+      }
+      .x-icons img {
+        max-width: 30px;
+        margin-right: 5px;
+      }
+      .gmail-icons img {
+        max-width: 30px;
+        margin-right: 5px;
+      }
+      .hotmail-icons img {
+        max-width: 30px;
+        margin-right: 5px;
+      }
+
+      .foto img {
+        max-width: 100px;
+        margin-right: 5px;
+      }
+
+      section {
+        margin: 20px;
+      }
+
+      h2 {
+        color: #333;
+      }
+
+      .experience {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        text-align: center; 
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      .contact-info {
+        font-size: 14px; 
+        margin-top: 20px; 
+      }
+
+      .contact-info li {
+        margin-bottom: 5px; 
+      }
+    </style>
+  </head>
+  <body>
+    <audio controls autoplay>
+        <source src="fondoepico.mp3" type="audio/mpeg">
+    </audio>
+    <header>
+      <h1>Miguel Alejandro Arroyo Llanes</h1>
+      <p>Curriculum</p>
+      <img src="Logo.png" alt="Logo" />
+    </header>
+
+    <div class="menu">
+      <p
+        data-target="#Inicio"
+        onclick="changeContent('#Inicio')"
+        class="active"
+      >
+        Inicio
+      </p>
+      <p data-target="#MisEstudios" onclick="changeContent('#MisEstudios')">
+        Mis estudios
+      </p>
+      <p data-target="#Hobbies" onclick="changeContent('#Hobbies')">Hobbies</p>
+      <p data-target="#SobreMi" onclick="changeContent('#SobreMi')">Sobre mí</p>
+    </div>
+
+    <div class="content">
+      <div data-content id="Inicio" class="active">
+        <h1>Me presento</h1>
+        <li class="foto">
+          <img src="Foto.jpg" alt="foto" />
+        </li>
+        <p>
+          Mi nombre es Miguel Alejandro Arroyo Llanes, soy estudiante de la
+          facultad de ingeniería cursando la carrera de ingeniería en
+          computación, tengo experiencia en desarrollo y administración de
+          proyectos a nivel licenciatura, conocimientos en python, lenguaje c,
+          html, css y javascript, nivel de inglés avanzado(C1).
+        </p>
+      </div>
+
+      <div data-content id="MisEstudios">
+        <h1>Mis estudios</h1>
+        <p>
+          He concluido mis estudios de bachillerato y me encuentro cursando la
+          carrera de ingeniería en computación en la Universidad Nacional
+          Autónoma de México (UNAM).
+        </p>
+        <p>
+          He asistido a diversos cursos de ingles como Harmon Hall y VGC
+          International, acualmente me encuentro buscando obtener mi
+          certificación del ingles.
+        </p>
+        <p>
+          Tengo desarrollado diversos proyectos a lo largo de mi carrera
+          estudiantil, algunos destacados entre ellos es una tesina cuyo tema es
+          "El desempleo a causa de las nuevas tecnologías" y un proyecto para un
+          concurso de seguridad de datos para el INAI, el título de este
+          proyecto es "Sistema de control de privacidad ejerciendo derechos
+          ARCO".
+        </p>
+      </div>
+
+      <div data-content id="Hobbies">
+        <h1>Hobbies</h1>
+        <p>
+          Practiqué varias disciplinas deportivas, entre las que se incluyen
+          natación, baloncesto, fútbol, diversas artes marciales y parkour,
+          entre otras mas aunque no a nivel competitivo.
+        </p>
+        <p>
+          He contribuido activamente en diversas expresiones culturales,
+          participando en actuaciones y eventos musicales, donde he tenido la
+          oportunidad de tocar varios instrumentos, aunque mi especialidad recae
+          en la guitarra.
+        </p>
+        <p>
+          En la actualidad, canalizo mi pasión hacia el desarrollo de proyectos
+          y mi participación en variados concursos, que abarcan desde la
+          redacción de textos y la oratoria hasta la creación de proyectos y
+          codificación.
+        </p>
+      </div>
+
+      <div data-content id="SobreMi">
+        <h1>Sobre mí</h1>
+        <p>Nací el 29 de noviembre del año 2002 en la Ciudad de México.</p>
+        <p>
+          Me considero una persona bastante creativa en el ámbito de resolver
+          problemas y en la creación de proyectos.
+        </p>
+        <p>
+          Tengo una buena habilidad social y gracias a diversas enseñanzas sobre
+          eltema dispongo de una buena habilidad en lo que se refiere a la
+          oratoria, no me da miedo hablar enfrente de un gran publico y de una
+          forma atractiva para este.
+        </p>
+        <strong>Mis habilidades:</strong>
+        <p>
+          Soy una persona muy dedicada y competitiva en lo que se requiere,
+          cuando me propongo a organizar un proyecto trato de hacerlo siempre lo
+          mejor que puedo y me esfuerzo siempre para que sea un buen trabajo.
+        </p>
+        <p>
+          Tengo buenas aptitudes al momento de dirigir un proyecto, se organizar
+          y comunicarme con los involucrados para hacer un buen trabajo.
+        </p>
+        <p>
+          Tengo una muy buena habilidad matemática y lógica que he sabido
+          aprovechar en mis proyectos y en el ambito estudiantil.
+        </p>
+      </div>
+    </div>
+
+    <section class="contact-info">
+      <h2>Información de Contacto</h2>
+      <ul>
+        <li class="gmail-icons">
+          <img src="gmail.png" alt="gmail" />
+          <strong>Correo Google:</strong> miguel.brooke@gmail.com
+        </li>
+
+        <li class="hotmail-icons">
+          <img src="outlook.png" alt="hotmail" />
+          <strong>Correo Outlook:</strong> miguel.brooke@hotmail.com
+        </li>
+
+        <li><strong>Redes sociales:</strong></li>
+
+        <li class="x-icons">
+          <img src="x.png" alt="Twitter" />
+          <strong>Twitter:</strong> @MiguelBrook29
+        </li>
+
+        <li class="instagram-icons">
+          <img src="instagram.png" alt="Instagram" />
+          <strong>Instagram:</strong> @miguel__brooks
+        </li>
+
+        <li><strong>Teléfono:</strong> (+52) 5569638768</li>
+      </ul>
+    </section>
+
+    <script>
+      function changeContent(targetId) {
+        var contentElements = document.querySelectorAll("[data-content]");
+        contentElements.forEach(function (element) {
+          element.classList.remove("active");
+        });
+
+        var targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          targetElement.classList.add("active");
+        }
+      }
+    </script>
+  </body>
+</html>

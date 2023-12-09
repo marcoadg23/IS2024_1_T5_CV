@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículum</title>
+  <style>
+    body {
+      font-family: Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #888;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    h1, h2, h3 {
+      color: #333;
+    }
+
+    section {
+      margin: 20px;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .sobre_mi, .experiencia, .habilidades, .idiomas, .contactos, .estudios, .hoobies {
+      margin-bottom: 30px;
+    }
+
+    .contactos li {
+      margin-bottom: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>José Ramón Aguilar Pérez</h1>
+    <h2>Desarrollador de Software</h2>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#sobre_mi" onclick="changeSection('sobre_mi')">Sobre mí</a></li>
+      <li><a href="#experiencia" onclick="changeSection('experiencia')">Experiencia Laboral</a></li>
+      <li><a href="#habilidades" onclick="changeSection('habilidades')">Habilidades</a></li>
+      <li><a href="#idiomas" onclick="changeSection('idiomas')">Idiomas</a></li>
+      <li><a href="#contactos" onclick="changeSection('contactos')">Contactos</a></li>
+      <li><a href="#estudios" onclick="changeSection('estudios')">Estudios</a></li>
+      <li><a href="#hoobies" onclick="changeSection('hoobies')">Hobbies</a></li>
+    </ul>
+  </nav>
+
+  <section id="sobre_mi" class="sobre_mi">
+    <h2>Un poco sobre mi</h2>
+      <p>Nací el 21 de febrero de 2001 en Uruapan, Michoacán.</p>
+      <p>Siempre doy mi mayor esfuerzo en cada trabajo en el que participo además de que me adapto rápido a las circunstancias que se me presentan. </p>
+      <p>Trabajar en equipo es muy importante para mí, ya que permite conocer diferentes enfoques y mentalidades a la hora de realizar una tarea.</p>
+  </section>
+
+  <section id="experiencia" class="experiencia">
+    <h2>Experiencia Laboral</h2>
+    <ul>
+      <li>
+        <strong>Proyecto Escolar</strong> - Programa paralelo para calcular la elevación de un terreno (16/12/2022)</li>
+      <li>
+        <strong>Proyecto Escolar</strong> - Simulador de Mundial en Java (16/12/2022)</li>
+    </ul>
+  </section>
+
+  <section id="habilidades" class="habilidades">
+    <h2>Habilidades y fortalezas</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li>C++</li>
+      <li>C#</li>
+      <li>Ensamblador x86</li>
+      <li>Rápida adaptabilidad a nuevos entornos</li>
+    </ul>
+  </section>
+
+  <section id="idiomas" class="idiomas">
+    <h2>Idiomas</h2>
+    <ul>
+      <li>Español (Nativo)</li>
+      <li>Inglés (Avanzado)</li>
+      <li>Alemán (Básico)</li>
+    </ul>
+  </section>
+
+  <section id="contactos" class="contactos">
+    <h2>Contactos</h2>
+    <ul>
+      <li><strong>Email:</strong> ramon.aguilar.perez11@gmail.com</li>
+      <li><strong>Teléfono: </strong>(452) 526-6607</li>
+      <li><strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/tu-perfil" target="_blank">Perfil LinkedIn</a></li>
+      <li><strong>GitHub: </strong><a href="https://github.com/RamonAguilar11" target="_blank">Perfil GitHub</a></li>
+      <li><strong>Instagram: </strong><a href="https://instagram.com/j.ramon_11?igshid=MzMyNGUyNmU2YQ==" target="_blank">j.ramon_11</a></li>
+    </ul>
+  </section>
+
+  <section id="estudios" class="estudios">
+    <h2>Estudios</h2>
+    <ul>
+      <li>
+        <strong>Universidad Nacional Autónoma de México</strong> - Licenciatura en Ingeniería en Computación (Generación 2022)
+        <p>Tesis: "Programación Paralela para aumentar la productividad en un sistema de ventas"</p>
+    </ul>
+  </section>
+
+  <section id="hoobies" class="hoobies">
+    <h2>Hoobies y gustos</h2>
+    <ul>
+      <li>Cocinar</li>
+      <li>Dibujar</li>
+      <li>Fórmula 1</li>
+      <li>Fútbol</li>
+      <li>Videojuegos de todo tipo</li>
+      <li>Aprender cosas nuevas</li>
+    </ul>
+  </section>
+
+  <section>
+    <a href="#" class="button">Descargar CV</a>
+  </section>
+
+   <script>
+    function changeSection(sectionId) {
+        // Oculta todas las secciones
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.style.display = 'none';
+        });
+
+        // Muestra la sección correspondiente al enlace clicado
+        document.getElementById(sectionId).style.display = 'block';
+
+        // Cambia el estilo del enlace activo
+        const links = document.querySelectorAll('nav a');
+        links.forEach(link => {
+            link.classList.remove('active');
+        });
+
+        document.querySelector(`nav a[href="#${sectionId}"]`).classList.add('active');
+    }
+  </script>
+  
+</body>
+</html>

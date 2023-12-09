@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png" href="resourses/logo_2.png">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+            <a href="main.html" class="active">Inicio</a>
+            <a href="Contact.html">Contáctame</a>
+    </nav>
+
+    <section>
+        <img src="resources/instagram.png" alt="imagen instagram" width="10%">
+        <button type="button" onclick="irAInstagram()">Ir a Instagram</button>
+        <script>
+          function irAInstagram() {
+            var urlInstagram = "https://www.instagram.com/adrixn.pxcheco?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr";
+            window.open(urlInstagram, "_blank");
+          }
+        </script>
+    </section>
+
+    <section>
+        <img src="resources/fb.png" alt="imagen fb" width="10%">
+        <button type="button" onclick="irAFb()">Ir a Facebook</button>
+        <script>
+          function irAFb() {
+            var urlFB = "https://www.facebook.com/profile.php?id=100009333375778&sk=about";
+            window.open(urlFB, "_blank");
+          }
+        </script>
+    </section>
+
+    <section>
+        <img src="resources/maps.png" alt="imagen Maps" width="7%">
+        <button type="button" onclick="irAMaps()">Ir a Ubicación</button>
+        <script>
+          function irAMaps() {
+            var urlMaps = "https://maps.app.goo.gl/EmwfUZsjL1GYqopi9";
+            window.open(urlMaps, "_blank");
+          }
+        </script>
+    </section>
+    <section>
+        <img src="resources/Gmail.png" alt="imagen Gmail" width="12%">
+        <p>Puedes contactarme por correo electrónico: <a href="adrian.pacheco@ingenieria.unam.edu">adrian.pacheco@ingenieria.unam.edu</a></p>
+    </section>
+    
+</body>
+</html>

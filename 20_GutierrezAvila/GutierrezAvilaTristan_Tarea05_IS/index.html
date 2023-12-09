@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi CV</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #111;
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    body.dark-mode {
+      background-color: #111;
+      color: #fff;
+    }
+
+    header {
+      background-color: #FF5733;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header img {
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    section {
+      margin: 20px;
+    }
+
+    h2 {
+      color: #FF5733;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #FF5733;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="N&E.jpg" alt="Tu Foto" width="100" height="100">
+    <h1>Gutierrez Avila Tristan Bernardo</h1>
+    <p>Ingeniero en Computación</p>
+  </header>
+
+  <section>
+    <h2>Perfil Profesional</h2>
+    <p>Soy un programador altamente competitivo y apasionado por los desafíos técnicos. Con una sólida formación en Ingenieria en Computación y una experiencia destacada en competiciones de programación, me destaco en la resolución rápida y eficiente de problemas algorítmicos y en la implementación de soluciones elegantes. Mi enfoque se centra en la optimización de código y la búsqueda continua de la excelencia técnica.</p>
+    <p>He participado en diversas competiciones de programación, donde he demostrado habilidades avanzadas en estructuras de datos, algoritmos y pensamiento lógico. Mi capacidad para trabajar bajo presión y tomar decisiones rápidas me ha permitido destacar en entornos competitivos. Además, tengo experiencia en colaborar en equipos multidisciplinarios para lograr resultados excepcionales.</p>
+  </section>
+
+  <section>
+    <h2>Formación Académica</h2>
+    <ul>
+      <li>Grado en Ingenieria en Computacion - Universidad Nacional Autonoma de México</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Proyectos Personales</h2>
+    <ul>
+      <li>Conversor de imagenes RGB a escala de grises</li>
+      <li>Interfaz de narraccion de partidos de futbol</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Habilidades</h2>
+    <ul>
+      <li>HTML5, CSS3, JavaScript</li>
+      <li>Lenguajes de Programación: Java, Python, C/C++,</li>
+      <li>Developer Tools: Git, Google Cloud Platform, VS Code, Visual Studio</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Idiomas</h2>
+    <ul>
+      <li>Español (Nativo)</li>
+      <li>Inglés (Intermedio)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Actividades Extracurriculares</h2>
+    <ul>
+      <li>Club de Programación - Participación activa en competencias</li>
+      <li>Club de Programación - Miembro del equipo academico del club - Encargado de impartir ciertos temas a las nuevas generaciones del club</li>
+    </ul>
+  </section>
+
+  <button id="darkModeButton">Modo Oscuro</button>
+
+  <script>
+    const body = document.body;
+    const darkModeButton = document.getElementById('darkModeButton');
+
+    darkModeButton.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>

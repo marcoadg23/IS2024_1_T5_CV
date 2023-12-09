@@ -1,0 +1,108 @@
+/* Contenido de css/styles.css */
+
+body {
+        font-family: 'Garamond', serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        height: 100vh;
+    }
+
+    #container {
+        display: flex;
+        height: 100%;
+    }
+
+    #sidebar {
+        background-color: #000;
+        color: #fff;
+        padding: 20px;
+        width: 30%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos horizontalmente */
+        justify-content: center; /* Centra los elementos verticalmente */
+    }
+
+    #main-content {
+        background-color: #fff;
+        padding: 20px;
+        width: 70%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos horizontalmente */
+        justify-content: center; /* Centra los elementos verticalmente */
+        height: 100vh; /* Añade altura para centrar verticalmente */
+    }
+
+    #profile-img {
+        max-width: 60%;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 20px; /* Espaciado inferior para separar la imagen de la descripción */
+    }
+
+    #description {
+        background-color: #000;
+        color: #fff;
+        padding: 20px; /* Añade un relleno para mejorar la legibilidad */
+        width: 70%;
+        text-align: justify; /* Justifica el texto */
+    }
+
+    #left-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #000;
+        color: #fff;
+        padding: 20px;
+        width: 50%; /* Ajusta el ancho según sea necesario */
+    }
+
+    #menu {
+        background-color: #000;
+        color: #FFD700;
+        padding: 10px;
+        width: 50%; /* Ajusta el ancho según sea necesario */
+        box-shadow: 0.2px 5px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+
+    .menu-button {
+        background-color: transparent;
+        color: #FFD700;
+        border: none;
+        margin-bottom: 10px;
+        cursor: pointer;
+        outline: none;
+        display: block;
+    }
+
+    .menu-button:hover {
+        border-left: 10px solid #fff;
+    }
+
+    .content {
+        display: none;
+        text-align: center; /* Centra el texto en cada sección */
+        margin: 0 auto; /* Centra el contenedor de cada sección horizontalmente */
+    }
+
+    .content.active {
+        display: block;
+    }
+
+    #subtitle {
+        color: #FFD700;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .content section p, .content section ul {
+        margin-bottom: 40px;
+    }

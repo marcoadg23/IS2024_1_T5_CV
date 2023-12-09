@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garcia Lopez Bolivar CV</title>
+  <style>
+
+     /* Estilos para la animación */
+     @keyframes aparecer {
+      0% { opacity: 0; transform: scale(0); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    .elemento-visible {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      height: 100px;
+      background-color: #3498db; /* Azul */
+      animation: aparecer 1s linear;
+    }
+
+
+
+    body {
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #edd990;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    ul {
+      list-style-type: disc; /* Utiliza "disc" para puntos, "circle" para círculos, "square" para cuadrados, etc. */
+      margin-left: 20px;     /* Añade un margen a la izquierda para separar la lista del borde izquierdo. */
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .imagen-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .imagen-container img {
+      width: 100px; /* ajusta el tamaño de la imagen según sea necesario */
+      margin-left: 20px; /* ajusta el margen izquierdo según sea necesario */
+    }
+
+    p {
+      text-align: justify;
+      margin: 0;
+    }
+
+    .center-text {
+      text-align: center;
+    }
+
+    #fecha-hora {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+  </style>
+  
+</head>
+<body>
+  <header>
+    <h1>Garcia Lopez Bolivar</h1>
+    <div class="center-text">
+        <p class="center-text">Garcia Lopez Bolivar - CV</p>
+        <p class="center-text">Estudiante de Ingenieria en Computación</p>
+        <br>
+    </div>
+
+    <div class="imagen-container">
+        <img src="https://www.ingenieria.unam.mx/nuestra_facultad/images/institucionales/escudo_fi_color.png" alt="Mi Foto">
+    </div>
+
+    <div id="fecha-hora"></div>
+  </header>
+
+  <section>
+
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///8AAACUlJTq6urm5ua5ubn29vaQkJDNzc3f39/c3NwsLCz8/Px8fHwUFBScnJxSUlKxsbEjIyOzs7NwcHCrq6spKSk3NzfR0dGKiorw8PBBQUHGxsakpKReXl5ZWVlMTExmZmY7OzsbGxsLCwu9vb0XFxd+fn7zKP1yAAAEEklEQVR4nO3di3aqMBAFUAKIolBUoFURlWrr///hLberq60FeWRgknj2DzRnCXkxSS0LAAAAAAAAAAAAAAAAAAAAwEA7dxbnkR3l8czdcTeGnL9Ksov4dsmS1Zy7UXT86UJUWUx97qZRCCZZZbxPL5OAu4GSgnR9J19pnWud8a368bx5WN+4m9mbc2yRr7R0uJvaz6RlvtKEu7E9BNcOAYUIudvbmXfqFFCIk8fd5G52Tx0DCvGk1TzHbRojqry73M1uz3nuEVCIZ3261JdeAT9mOLoM/m2Hwb+O3E1vx+4dUAibu/FtbCQCCrHhbn6zoM1UtN5C/VdxKxVQiCl3gCaOZEAhVB8yCumEBXeE++bSAYVQe/8mIUiYcIe4R/4tLKn8JkYkCSPuGHfIjYVfXrhj1KPoZ0rq9jU0D6nKj2nfVdOtV+4gdQKigEKoOjmdkSWccUepsSJLuOKOUiMkS6jq7umSLOGSO0qNV7KEqnamNDOa0oI7SjWvzzZwtbWaW/y7M1nCs5o7/OYnNP8pNb+neYDRwvwRn27WduWOUsP8mbf5qye6FTB3klpUnWnGHaSW+TtR5u8mEm22Kbwj/AC7+uZ/mTH/6xpJX6N48XchHVDxr9wPUKlgTSUDKl9tIlsxpEPxnvFVXw9QuWdZh94BD9xNbykwvoLWcvrtnJ6VHyi+Od1L9YW4aBTQsnbdf8W1mjv5tbyum6cnzQJ+dDfddk9DbTqZH0w/2fXBKVrmK7TqY355a3N45lnfE5altCnfJeVuorS7J50zTV/AG/Npdchsq/DGaEeBm4a/142La6rRYby23H2c5nmexnsDwwEAAAAAAACACbyds5nk9jZMDsfl8ZCEWzuK9/7O03Er/7fAn+XX4lT3Ieo9K675zFf0cEWTYLMKT+3ui1pnSTrTK6a7CnvcZhamcx2e2mAeyVTvFdFc6R/TiRP5GtpFMlF0O9WP7n2g6CaLlCtQ9G26g2ufnmyFQjp512sg28lyNb6c7otB4n067LnjeTn103nrHHF2rq7s1WXtXLn6Vp+ibL2dhONTqjNevv8Zx+50vHGez5+uo76P8ej5SvFo+Vy6A7/dLEeaBORM+Ur5CPm8/jfMUjgOXsK4GXqEb3IeuJr/jTlfadAyKs5X8NuAL6MaAQeM2FhnOJqB6hn33Ll+GGRRRXMClsoQ09Rh1vF9negDqtLLfCF/FT3uRH9QLzXGXy012dIG9C7Nf3JkF9ofke5yHTq0y0XeBUU10uOYPf4xzvBI//WOz52mEuWKv8shrfFQLqOoLg+iRXnLi8wB9OFQHm1HQh5IiIRIyA8JkRAJ+SEhEiIhPyREwsdKKHsZ4jAor1jcT231TNkrMwEAAAAAAAAAAAAAAAAAAABu/AMfVksANwN8IgAAAABJRU5ErkJggg==" alt="Mi Foto"width="200" height="200">
+
+    <h2>Sobre mí:</h2>
+    <p>Soy un estudiante universitario de la Universidad Nacional Autónoma de México (UNAM) con
+        4 años de experiencia en el mundo de la programación. En mis años de experiencia
+        hice muchos programas como videojuegos, notas de remesa, páginas web, etc. Soy
+        un trabajador responsable y disciplinado que quiere trabajar con otras personas para
+        hacer programas importantes y desarrollar software para mejorar el mundo del
+        Computadoras y programas.</p>
+
+    <h3>Mis Estudios:</h3>
+        <p>2021 - Presente</p>
+        <p>Ingeniería en Computación</p>
+        <p>Universidad Nacional Autónoma de México - Facultad de Ingeniería - Ciudad De México</p>
+        <p>Modulos Clave: estructura de datos y algoritmos 1 y 2, programación orientada a
+            objetos, fundamentos de programación..</p>
+        <br>
+        <p>2018 - 2021</p>
+        <p>Preparatoria</p>
+        <p>Escuale Nacional, Colegio de Ciencias Y Humanidades Plantel Vallejo (CCH) - Ciudad De México</p>
+        <p>Modulos Clave: Cibernética e informática, gestión, comunicación, psicología.</p>
+        <br>
+        <p>2015 - 2018</p>
+        <p>Secundaria</p>
+        <p>Escuela Secundaria Galo Soberón y Parra - Chilpancingo de los Bravo. Gro</p>
+        <p>Modulos Clave: Tecnologia, Ciencias, Fisica.</p>
+
+    <h2>Mis Hobbies/gustos:</h2>
+    <p>Hobbies:</p>
+    <ul>
+        <li>Videojuegos.</li>
+        <li>Leer.</li>
+        <li>Basquetball.</li>
+        <li>Escuchar Musica.</li>
+        <li>Tocar el Bajo.</li>
+        <li>Breve descripción de tus estudios y logros académicos.</li>
+      
+    </ul>
+    <p>Gustos:</p>
+    <ul>
+        <li>Color Rojo, Negro y Cafe.</li>
+        <li>Musica Rock (todo tipo).</li>
+        <li>Programación y Ciencias.</li>
+        <li>Peliculas Thriller y Terror.</li>
+        <li>Videojuegos de Accion y Aventura.</li>
+        <li>Comida Mexicana y China.</li>
+      
+    </ul>
+    
+
+    <h2>Mis habilidades:</h2>
+    <ul>
+        <li>Manejo del idioma Ingles (Medio - Avanzado).</li>
+        <li>Desarrollo avanzado de programación: C++, C, Java y Python.</li>
+        <li>Desarrollo medio-bajo de programación: HTML5, CSS3, JavaScript, C#.</li>
+        <li>Buen rendimiento con office 365.</li>
+        <li>Edición de audio y vídeo.</li>
+        <li>Manejo de redes sociales</li>
+        <li>Edición y trabajo músical.</li>
+        <li>Git, GitHub</li>
+      
+    </ul>
+
+    <h2>Medios de Contacto:</h2>
+        <p>Personales:</p>
+    <ul>
+        <li>Mail: boligb25@gmail.com.</li>
+        <li>Celular: 7471637046.</li>
+        <li>Instagram: @bolivar_250</li>
+    </ul>
+        <p>Referencias:</p>
+    <ul>
+        <li>Maximiliano Muñíz Ramírez, max1249mr@gmail.com, 7471777330 </li>
+        <li>Bolívar García Pineda, bolivargp69@gmail.com, 7471245650 </li>
+    </ul>
+
+
+    <h2>Experiencia como Voluntario:</h2>
+        <p>2021</p>
+        <p>Voluntario como asistente docente</p>
+        <p>Hice algunas evaluaciones de exámenes y tareas. También calculé el promedio
+            del grupo y el promedio de aprobación de 6 clases.</p>
+        <br>
+        <p>2019</p>
+        <p>Asistente en puesto comercial en la feria del pozole y mezcal. Chilpancingo de
+            los Bravo. Gro</p>
+        <p>Trabajé con la empresa "El indomable", en ese tiempo elaboraba algunos
+            productos como mezcal, vendía algunos productos en el puesto y llevaba las
+            cuentas de compras y ventas de la empresa..</p>
+        <br>
+        <p>2018</p>
+        <p>Auxiliar docente en la formación de la escolta del colegio secundario “Dr. Galo
+            Soberón y Parra”. Chilpancingo de los Bravo. Gro</p>
+        <p>Hice algunos ejercicios y ensayos para que la escolta entrara al concurso estatal
+            de escoltas escolares, trabajé 2 meses y la escolta ganó el segundo lugar en el
+            concurso.</p>
+
+        <h1>Apartado Eventos! </h1>
+        
+        <input type="text" id="nombreInput" placeholder="Tu nombre">
+        <button id="saludoBtn" class="btn">Obtener Saludo</button>
+        <p id="saludoMensaje"></p>
+        <br>
+        <p>Si te interesa descargar mi CV completo: </p>
+        <br>
+        <a href="https://drive.google.com/file/d/1FP2xA4tN_0IORq5gOj5KLJWtOggawsao/view?usp=sharing" class="btn" target="_blank">Descargar CV (Español)</a>
+        <a href="https://drive.google.com/file/d/1odrOJnpoKnYY9LU5rjNE_EwJRXGs-n7_/view?usp=sharing" class="btn" target="_blank">Descargar CV (Ingles)</a>
+
+        <button id="mostrarElementoBtn" class="btn">Mostrar Cuadro azul</button>
+  </section>
+
+  <script>
+     // Función para obtener y mostrar la fecha y hora en tiempo real
+     function mostrarFechaHora() {
+      const fechaHoraElemento = document.getElementById('fecha-hora');
+      const fechaHora = new Date();
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', timeZoneName: 'short' };
+      const fechaHoraFormato = fechaHora.toLocaleDateString('es-MX', options);
+      fechaHoraElemento.textContent = `Consulta realizada el: ${fechaHoraFormato}`;
+    }
+
+     // Función para manejar el evento de clic en el botón
+     function obtenerSaludo() {
+      const nombreInput = document.getElementById('nombreInput').value;
+      const saludoMensaje = document.getElementById('saludoMensaje');
+
+      if (nombreInput.trim() !== '') {
+        saludoMensaje.textContent = `Hola, ${nombreInput}! Bienvenid@ a mi página - CV.`;
+      } else {
+        saludoMensaje.textContent = 'Por favor, ingresa tu nombre.';
+      }
+    }
+
+    // Llama a la función al cargar la página
+    mostrarFechaHora();
+
+    document.getElementById('saludoBtn').addEventListener('click', obtenerSaludo);
+
+    function mostrarElemento() {
+      const elementoVisible = document.createElement('div');
+      elementoVisible.classList.add('elemento-visible');
+
+      document.body.appendChild(elementoVisible);
+
+      // Elimina el elemento después de la animación
+      elementoVisible.addEventListener('animationend', () => {
+        elementoVisible.remove();
+      });
+    }
+
+    // Nuevo escuchador de eventos para el botón "Mostrar Elemento"
+    document.getElementById('mostrarElementoBtn').addEventListener('click', mostrarElemento);
+
+
+
+  </script>
+</body>
+</html>

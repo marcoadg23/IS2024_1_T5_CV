@@ -1,0 +1,291 @@
+body{
+    max-width: 900px; /* Establece el ancho máximo del cuerpo del documento */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Añade espaciado alrededor del contenido */
+    background-color: #29133d;
+    color: #b06190;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 15px;
+    line-height: 1.7; /*interlineado*/
+}
+
+h2{
+    font-family: 'Tilt Neon', sans-serif;
+    color: #e3a6a0;
+}
+
+
+.nav-right-section{
+    list-style: none;  /* Eliminar puntitos */
+    line-height: 3; /*interlineado*/
+    text-align: right; /* Alinea el texto a la derecha */
+}
+
+a{
+    text-decoration: none; /* Eliminar línea debajo de texto */
+}
+
+.seccion-1 ul{
+    margin:0;
+    padding: 0;
+}
+
+.nav-right-section a{
+    color:#ae84da;
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 17px;
+    transition: font-size 0.3s ease;
+}
+
+.nav-right-section a:hover{
+    color: #eb2485;
+    font-size: 18px;
+}
+
+.contenedor-nav{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+}
+
+.contenedor-proyectos{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+}
+
+.seccion-1-proy{
+    order:1;
+    flex:1;
+}
+
+.seccion-2-proy{
+    order:2;
+    flex:1;
+}
+
+.seccion-2-proy ul{
+    list-style: none;  /* Eliminar puntitos */
+    margin: 0;
+}
+
+.seccion-1-proy ul{
+    list-style: none;  /* Eliminar puntitos */
+    margin: 0;
+}
+
+.seccion-1{
+    order:2;
+    flex:1;
+    padding: 20px;
+}
+
+.seccion-2{
+    order:1;
+    flex:2.5;
+    padding: 20px;
+}
+
+#texto-animado{
+    height: 40px;
+    font-size: 24px;
+    color: #ae84da;
+    white-space: nowrap; /* Evita saltos de línea */
+    overflow: hidden; /* Oculta el contenido adicional */
+}
+
+
+#photo-image{
+    border-radius: 300px;
+    width: 230px;
+    height: auto;
+    border-style: solid;
+    border-width: 7px;
+    border-color: #e3a6a0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* ------------------------------------------------------------------------ */
+
+.estilo-1{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: #eb2485;
+    transition: width 0.5s ease; 
+}
+
+.estilo-1:hover{
+    background-color:#ae84da11;
+    color:#eb2485;
+    border-color: #ae84da;
+}
+
+.estilo-2{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: #ae84da;
+    transition: width 0.5s ease; 
+}
+
+.estilo-2:hover{
+    background-color:#eb248511;
+    color:#ae84da;
+    border-color: #eb2485;
+}
+
+.contenido-lista-interna{
+    background-color: #e3a6a0;
+    color:#29133d;
+    list-style: none; 
+    display: inline-block;
+    padding:5px;
+    border-radius: 10px;
+}
+
+.lista-interna{
+    padding: 0px;
+    margin: 0px;
+    list-style: none; 
+}
+
+.contenedor-estudios{
+    display: flex;
+    align-items: stretch;
+}
+
+.estudios-seccion-1{
+    text-align: right; /* Alinea el texto a la derecha */
+    direction: rtl;
+    flex:1;
+    padding-bottom: 100px;
+
+}
+
+.estudios-seccion-2{
+    flex:1;
+    padding-top: 100px;
+}
+
+.linea-vertical{
+    border-left:3px solid  #ae84da;
+}
+
+
+.contenedor-cursos{
+    display: flex;
+    align-items: stretch;
+}
+
+.cursos-seccion-1{
+    text-align: right; /* Alinea el texto a la derecha */
+    direction: rtl;
+    flex:1;
+}
+
+.cursos-seccion-2{
+    flex:1;
+    padding-top: 100px;
+}
+
+.linea-vertical-1{
+    border-left:3px solid  #eb2485;
+}
+
+.cyc{
+    padding-top: 130px;
+}
+
+#Habilidades{
+    text-align: center;
+    list-style-position: inside;
+}
+
+#Habilidades ul{
+    margin:0;
+    padding: 0;
+    list-style: none;  /* Eliminar puntitos */
+}
+
+.lenguajes{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidades-lista{
+    list-style: none;  /* Eliminar puntitos */
+    margin:0;
+    padding: 0;
+}
+
+.lenguajes img{
+    width: 80px;
+}
+
+#proy1{
+    width: 230px;
+    border-radius: 20px;
+}
+
+#proy2{
+    width: 230px;
+    border-radius: 20px;
+}
+
+#texto-final{
+    font-family: 'Tilt Neon', sans-serif;
+    color:#ae84da;
+    font-size: 25px;
+    padding-top: 60px;
+}
+
+footer{
+    text-align: center;
+}
+
+footer img{
+    width: 40px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+footer img:hover{
+    width: 37px;
+    border-style: solid;
+    border-color: #ae84da;
+    border-width: 3px;
+}
+
+
+#Hablemos img{
+    width: 70px;
+    height: 70px;
+}
+
+
+
+
+.derechos-autor{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #eb2485;
+}
+
+
+
+
+

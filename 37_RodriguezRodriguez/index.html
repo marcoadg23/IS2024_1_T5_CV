@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Arturo</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero1.png" alt="">
+            </div>
+            <h1>ARTURO RODRIGUEZ</h1>
+            <h2>Ingeniero en Computación</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100004197990675"
+                    target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.skype.com/es/" target="_blank"><i class="fa-brands fa-skype"></i></a>
+                <a href="https://www.linkedin.com/in/arturo-rodriguez-rodriguez-b60558216" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://instagram.com/rarturorodriguez?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Arturo Rodriguez.</span> Termine una carrera técnica en administración contable en 2018 ,
+                y estoy enbusca de un nuevo trabajo. Actualmente estoy cursando la carrera deIngeniería en Computacion
+                en la Facultad de Ingeniería, UNAM. Me encantaestar al tanto de las últimas tendencias y tecnologías, y
+                siempre estoybuscando maneras de mejorar mis habilidades.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            11-06-2003
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            5555800010
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            arturorodriguez2213@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Alvaro Obregón,CDMX
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCER</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-award"></i>
+                            <span>CURSOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-bowl-food"></i>
+                            <span>COMIDA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-swimming"></i>
+                            <span>NATACIÓN</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-video"></i>
+                            <span>CINE</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a class="btn" href="archivos/CV_Arturo Rodriguez Rodriguez.pdf"
+                    download="CV_Arturo Rodriguez Rodriguez">
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                </a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Lenguaje C</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Lenguaje Ensamblador</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Capacidad de adaptación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SCRUM</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingenieria en Computación</h4>
+                        <span class="casa">Universidad Nacional Autonoma de México (UNAM) </span>
+                        <span class="fecha">2021 - En curso</span>
+                        <p>Actualmente me encuentro estudiando la carrera de "Ingenieria en computación" en la
+                            Universidad Nacional Autonoma de México, Facultad de Ingeniería.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>ENP #5 "José Vasconcelos", UNAM</h4>
+                        <span class="casa">Universidad Nacional Autonoma de México (UNAM)</span>
+                        <span class="fecha">2018 - 2021</span>
+                        <p>Durante mi tiempo en la Escuela Nacional Preparatoria N°5 "José Vasconcelos" de la UNAM, me
+                            gradué con un destacado promedio de excelencia. Mi enfoque académico se centró en el área de
+                            las Ciencias Físico-Matemáticas y las Ingenierías, donde adquirí habilidades sólidas y
+                            conocimientos profundos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Carrera técnica en Administración Contable por la SEP</h4>
+                        <span class="casa">Secretaria de Educación Pública (SEP)</span>
+                        <span class="fecha">2017</span>
+                        <p>Completé con éxito una Carrera Técnica en Administración Contable, otorgada por la Secretaría
+                            de Educación Pública (SEP), con una duración total de 960 horas. Durante este programa,
+                            adquirí conocimientos especializados en administración y contabilidad, desarrollando
+                            habilidades prácticas que respaldan mi capacidad para abordar tareas financieras y
+                            administrativas de manera efectiva.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Becario PILARES</h4>
+                        <span class="casa">PILARES CDMX</span>
+                        <span class="fecha">Antiguedad: 1 año</span>
+                        <p>Mis funciones eran hacer registros de las personas que acudían alespacio de Pilares, así como
+                            diseñar y organizar actividades comunitarias para diferentes grupos de edad.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Atención al cliente supermercado "Los Pinos"</h4>
+                        <span class="casa">"Los Pinos",S.A de C.V</span>
+                        <span class="fecha">Antiguedad: 1 año</span>
+                        <p>Mis funciones eran atender al cliente, acomodo de mercancía, revisión de inventario, arqueo
+                            de caja y recibir los pedidos de los proveedores.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Freelancer</h4>
+                        <span class="fecha">Antiguedad: 6 meses</span>
+                        <p>Trabajé como freelancer en la instalación y mantenimiento de asistentesvirtuales Alexa para
+                            clientes de distintos sectores y perfiles, brindando servicios de configuración, integración
+                            y soporte técnico.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                <a class="recon" href="archivos/reconocimientos.pdf" download="Reconocimientos_Arturo Rodriguez Rodriguez">
+                    <img src="img/recon.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Reconocimientos</h3>
+                        <p>Colección</p>
+                    </div>
+                </a>
+                </div>
+                <div class="proyecto">
+                    <a class="cert" href="archivos/Certificaciones_ArturoRodriguezRodriguez.pdf" download="Certificaciones_ArturoRodriguezRodriguez">
+                        <img src="img/certi.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Certificaciones</h3>
+                            <p>Colección</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                <a class="proy" href="archivos/Proyectos de diseño.pdf" download="Proyectos_Diseño Arturo Rodriguez">
+                    <img src="img/foto.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseños digitales</h3>
+                        <p>Colección</p>
+                    </div>
+                </a>
+                </div>
+                <div class="proyecto">
+                <a class="comu" href="archivos/Trabajo comunitario.pdf" download="TrabajoComunitario_Arturo Rodriguez Rodriguez">
+                    <img src="img/comu.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Trabajo comunitario</h3>
+                        <p>Fotografías</p>
+                    </div>
+                </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Proyectos</h3>
+                        <p>Recopilación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/bot.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Bot</h3>
+                        <p>Evidencias</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/mapa.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Alvaro Obregón, Ciudad de México, C.P. 01150
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 59274795
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: arturorodriguez2213@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+        <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100004197990675"
+            target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.skype.com/es/" target="_blank"><i class="fa-brands fa-skype"></i></a>
+        <a href="https://www.linkedin.com/in/arturo-rodriguez-rodriguez-b60558216" target="_blank"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://instagram.com/rarturorodriguez?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i
+                class="fa-brands fa-instagram"></i></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Currículum</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    h1, h2, h3 {
+      color: #3498db;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .perfil {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-bottom: 30px;
+    }
+
+    .perfil img {
+      border-radius: 50%;
+      max-width: 150px;
+      border: 5px solid #3498db;
+    }
+
+    .info-personal {
+      max-width: 60%;
+      text-align: left;
+    }
+
+    .contacto {
+      font-weight: bold;
+    }
+
+    .seccion {
+      margin: 30px 0;
+    }
+
+    .habilidades {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .habilidad {
+      width: 30%;
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      margin: 5px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Su Nombre</h1>
+    <p>Sobre mí: Soy un estudiante especializandoce en Ingeniería en Computación</p>
+  </header>
+
+  <div class="container">
+    <section class="perfil">
+      <img src="url_de_tu_foto.jpg" alt="Foto de perfil">
+      <div class="info-personal">
+        <h2>Desarrollador Web</h2>
+        <h3>Medios de Contacto</h3>
+        <p>Ubicación: CDMX, Mexico</p>
+        <p class="contacto">Correo: troyan4004@gmail.com</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+        <section>
+            <h2>Mis Estudios</h2>
+            <p>Carrera tecnica en Mantenimiento de sistemas de Microcomputo - Universidad Nacional Autonoma de Mexico</p>
+          </section>
+    <section>
+        <h2>Mis Hobbies/Gustos</h2>
+        <p>Disfruto de la investigación, lectura y musica.</p>
+      </section>
+    <section>
+        <h2>Mis Habilidades</h2>
+        <div class="habilidades">
+          <div class="habilidad">HTML5</div>
+          <div class="habilidad">CSS</div>
+          <div class="habilidad">JavaScript</div>
+          <div class="habilidad">Mantenimiento de Software</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experiencia Laboral</h2>
+        <ul>
+          <li>Mantenimiento en escuela secundaria </li>
+          <li>Asistencia tecnica</li>
+        </ul>
+      </section>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('El CV ha sido cargado correctamente.');
+    });
+  </script>
+</body>
+</html>

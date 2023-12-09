@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+}
+.encabezado {
+
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 248, 239);
+}.encabezado p {
+    font-size: 12px;
+}
+.encabezado h4{
+    margin: 3px 0;
+}
+.Resumen p {
+    text-indent: 2em;
+    font-size: 12px;
+}
+.tabla-sin-bordes {
+    border-collapse: collapse;
+    width: 80%; /* El ancho total de la tabla será el 80% del ancho de la página */
+    margin: auto; /* Centra la tabla */
+}
+
+.tabla-sin-bordes td {
+    border: 0;
+    width: 50%;
+    font-size: 12px;
+}
+
+.Experiencia_laboral p {
+    text-indent: 2em;
+    font-size: 12px;
+}
+.Educacion p {
+    text-indent: 2em;
+    font-size: 12px;
+}
+
+.contacto {
+
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 248, 239);
+}.contacto p {
+    font-size: 12px;
+}
+.contacto h4{
+    margin: 3px 0;
+}
+
+
+.campo-formulario {
+    flex: 1 0 40%; /* Esto hará que los campos ocupen al menos el 40% del ancho del formulario */
+}
+
+.boton {
+    border: none; /* Remove borders */
+    color: rgb(116, 14, 14); /* Add a text color */
+    background-color: slategray;
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+  }

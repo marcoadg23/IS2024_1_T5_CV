@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 30px;
+            animation: fadeInDown 1s;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 36px;
+        }
+
+        p {
+            color: #777;
+            font-size: 18px;
+        }
+
+        img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            animation: rotate 3s infinite linear;
+        }
+
+        section {
+            margin-bottom: 40px;
+            animation: fadeInUp 1s;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        p.description {
+            font-size: 16px;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown">
+        <img src="mi_foto.jpg" alt="Mi Foto">
+        <h1>Santiago Medina Guzmán</h1>
+        <p>Sobre mí</p>
+    </header>
+
+    <section class="animate__animated animate__fadeInUp">
+        <h2>Estudios</h2>
+        <ul>
+            <li>Estudiante de Ingeniería en Computacíón en la Facultad de Ingeniería - UNAM</li>
+        </ul>
+    </section>
+
+    <section class="animate__animated animate__fadeInUp">
+        <h2>Hobbies y gustos</h2>
+        <p class="description">Me gusta la programación, las matemáticas y el ciclismo</p>
+    </section>
+
+    <section class="animate__animated animate__fadeInUp">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Programación en C, Java y Python</li>
+            <li>Desarrollador backend</li>
+            <li>Asesor de Cálculo y Álgebra</li>
+        </ul>
+    </section>
+
+    <section class="animate__animated animate__fadeInUp">
+        <h2>Mis medios de Contacto</h2>
+        <ul>
+            <li>Email: <a href="mailto:sntgmedinaguzman@gmail.com">sntgmedinaguzman@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.facebook.com/santi.medina.108/" target="_blank">https://www.facebook.com/santi.medina.108/</a></li>
+            <li>Twitter: <a href="https://www.instagram.com/santiagomedinamx/" target="_blank">https://www.instagram.com/santiagomedinamx/</a></li>
+        </ul>
+    </section>
+</body>
+</html>

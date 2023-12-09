@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: 'Libre Baskerville', serif;
+      margin: 0;
+      margin-bottom: 25px;
+      padding-bottom: 80px; /* Espacio para el footer */
+      background-color: #d6f4f4;
+      color: #071f57;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      background-color: #4c7ee4;
+      text-align: center;
+      padding: 30px 0;
+      margin-bottom: 20px;
+    }
+
+    h1, h3 {
+      margin: 0;
+      color: #b7e6f7;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      background-color: #4c7ee4;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    nav ul li {
+      flex: 1;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      text-align: center;
+      padding: 10px;
+    }
+
+    main {
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #B8CDF8;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: #071f57;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #071f57;
+      margin-right: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #4c7ee4;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: none;
+    }
+
+    /* Estilos para el modo oscuro */
+    body.dark-mode {
+      background-color: #121212;
+      color: #144d4e;
+    }
+
+    header.dark-mode {
+      background-color: #1f1f1f;
+    }
+
+    section.dark-mode {
+      background-color: #333;
+    }
+
+    a.dark-mode {
+      color: #2a5666;
+    }
+
+    h3.dark-mode,
+    h2.dark-mode,
+    h1.dark-mode {
+      color: #d6f4f4;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+      }
+    }
+
+    /* Estilos mejorados del botón de modo oscuro */
+    .dark-mode-toggle {
+      background-color: #4c7ee4;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .dark-mode-toggle:hover {
+      background-color: #2a4d84;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mi CV</h1>
+    <h3>Elizabeth Durán Fernández</h3>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Modo Oscuro</button>
+    <nav>
+      <ul>
+        <li><a href="#about"><i class="fas fa-user"></i> Acerca de Mí</a></li>
+        <li><a href="#goals"><i class="fas fa-bullseye"></i> Metas Profesionales</a></li>
+        <li><a href="#education"><i class="fas fa-graduation-cap"></i> Educación</a></li>
+        <li><a href="#hobbies"><i class="fas fa-guitar"></i> Mis hobbies/gustos</a></li>
+        <li><a href="#skills"><i class="fas fa-tools"></i> Mis habilidades</a></li>
+        <li><a href="#experience"><i class="fas fa-briefcase"></i> Experiencia Laboral</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Medios de contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>Acerca de Mí</h2>
+      <p>
+        Soy una persona que se distingue por valores fundamentales que guían mi vida tanto
+        personal como laboral. La honestidad es un pilar en mi actuar diario, siempre manteniendo
+        una conducta transparente y ética en mis interacciones.
+      </p>
+      <p>
+        Mi compromiso y responsabilidad se reflejan en cada tarea que asumo, buscando siempre
+        alcanzar resultados de calidad y cumplir con los objetivos establecidos. Asumo cada
+        responsabilidad con seriedad y dedicación, manteniendo un alto nivel de compromiso con
+        cada proyecto en el que participo.
+      </p>
+      <p>
+        La empatía hacia los demás es una cualidad que considero esencial. Esta capacidad me
+        permite comprender las necesidades de los demás, trabajar eficazmente en equipo y crear
+        un entorno colaborativo y respetuoso en cualquier situación laboral.
+        Integrar estos valores en mi vida cotidiana no solo fortalece mi ética laboral, sino que
+        también contribuye a relaciones laborales armoniosas y a un ambiente de trabajo positivo
+        y productivo para todos.
+      </p>
+    </section>
+
+    <section id="goals">
+      <h2>Metas Profesionales</h2>
+      <p>
+        Mi principal objetivo es completar mi carrera en Ingeniería en Computación, priorizando la adquisición de conocimientos y habilidades,
+        independientemente del tiempo que esto requiera. Busco especializarme en un área
+        específica de la computación que despierte mi pasión y me permita contribuir
+        significativamente al campo.
+      </p>
+      <p>
+        Además, mi ambición profesional se centra en un crecimiento continuo en el ámbito laboral.
+        Busco oportunidades que me desafíen, permitiéndome aplicar mis habilidades y
+        conocimientos de manera innovadora. Mi objetivo es mantenerme actualizada
+        constantemente en esta área en constante evolución, mediante la participación en
+        programas de formación, certificaciones y manteniéndome al tanto de las últimas
+        tendencias tecnológicas.
+      </p>
+    </section>
+
+    <section id="education">
+      <h2>Educación</h2>
+      <p>
+        Ingeniería en Computación (En curso)<br>
+        [Universidad Nacional Autónoma de México]<br>
+        Fecha de inicio - Julio del 2021 / Presente Noviembre del 2023
+      </p>
+    </section>
+
+    <section id="hobbies">
+      <h2>Mis hobbies/gustos</h2>
+      <p>
+        Exploración Cultural a través de la Música, Museos y Teatro: Mi pasión por la música se ve
+        complementada por la exploración cultural. Disfruto asistir a conciertos, apreciar las
+        interpretaciones de renombrados músicos me brinda una profunda apreciación por la expresión
+        artística y la maestría técnica que implica la música clásica. Además, encuentro inspiración en obras
+        de teatro, las cuales considero una ventana única para entender la creatividad humana y sus
+        historias.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Mis habilidades</h2>
+      <ul>
+        <li>- Resolución de Problemas Creativos</li>
+        <li>- Pensamiento Analítico y Creatividad</li>
+        <li>- Organización y Gestión del Tiempo</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experiencia Laboral</h2>
+      <ul>
+        <li><b>Eficacia - Call Center de Ventas</b><br>
+          Posición: Agente de Ventas de Seguros<br>
+          (Fechas: Seis meses)<br>
+          • Responsable de la venta de paquetes de seguros a clientes potenciales,
+          desarrollando habilidades en ventas, comunicación efectiva y persuasión.
+        </li>
+        <br>
+        <li><b>Restaurante "De Lunas"</b><br>
+          Posiciones: Lava loza, Mesera, Cajera<br>
+          (Fechas: Dos años y seis meses)<br>
+          • Inicialmente desempeñé labores como lava loza, luego asumí el rol de mesera y
+          finalmente fui promotora a cajera. Durante este tiempo, adquirí habilidades en
+          atención al cliente, gestión de pedidos y manejo de caja.
+        </li>
+        <br>
+        <li><b>Trabajos Actuales (Alternando)</b><br>
+          • Cuidadora de Niños: Actualmente, trabajo como cuidadora de niños,
+          desarrollando habilidades en cuidado infantil, organización y atención
+          individualizada a las necesidades de los niños.<br>
+          • Mesera en Eventos/Banquetes (Esporádico): Además, colaboro esporádicamente
+          en banquetes como mesera, atendiendo eventos y desarrollando habilidades en
+          servicio al cliente en entornos dinámicos.
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Medios de contacto</h2>
+      <ul>
+        <li>Email: <a href="mailto:elid18705@gmail.com"><u>elid18705@gmail.com</u></a></li>
+        <li>Teléfono: <a href="https://wa.me/525529084473?text=Hola%20Elizabeth"><u>5529084473</u></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    Universidad Nacional Autónoma de México, Facultad de Ingeniería, Ingeniería de Software, grupo 04, creado por Elizabeth Durán Fernández.
+  </footer>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      body.classList.toggle("dark-mode");
+      const darkModeButton = document.querySelector('.dark-mode-toggle');
+      darkModeButton.textContent = body.classList.contains("dark-mode") ? 'Modo Claro' : 'Modo Oscuro';
+
+      const footer = document.querySelector('footer');
+      footer.style.display = body.classList.contains("dark-mode") ? 'block' : 'none';
+    }
+
+    function showFooterOnMobile() {
+      const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      const footer = document.querySelector('footer');
+      footer.style.display = width <= 600 ? 'block' : 'none';
+    }
+
+    showFooterOnMobile();
+    window.addEventListener('resize', showFooterOnMobile);
+  </script>
+</body>
+</html>

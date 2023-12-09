@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Saida Mayela Sanchez Calvillo</title>
+</head>
+<body>
+    <div id="container">
+        <div id="sidebar">
+            <img id="profile-img" src="foto.jpg" alt="Tu foto de perfil">
+            <h1>Saida Mayela Sanchez Calvillo</h1>
+            <p id="subtitle">Estudiante de la UNAM</p>
+            <p id="description">
+                Persona proactiva y cooperativa en busca de trabajo. Soy buena trabajando en equipo y me gusta tener una buena actitud siempre, lo que provoca que la atención al cliente se me dé con facilidad. El aprender a desarrollar actividades me es curioso por lo que siempre investigo más allá de las cosas.
+            </p>
+            <div id="menu">
+                <button class="menu-button" onclick="toggleDetails('education')">Mis estudios</button>
+                <button class="menu-button" onclick="toggleDetails('hobbies')">Mis hobbies/gustos</button>
+                <button class="menu-button" onclick="toggleDetails('skills')">Mis habilidades</button>
+                <button class="menu-button" onclick="toggleDetails('experience-details')">Experiencia laboral</button>
+                <button class="menu-button" onclick="toggleDetails('certification-details')">Certificaciones</button>
+                <button class="menu-button" onclick="toggleDetails('contact')">Medios de contacto</button>
+            </div>
+        </div>
+
+        <div id="main-content">
+            <div class="content education" id="education">
+                <h2>Mis estudios</h2>
+                <p>
+                    <strong>Facultad de ingeniería. UNAM.</strong><br>
+                    Agosto 2021 - Presente<br>
+                    Actualmente estudio Ingeniería en computación. Estudiante dedicada, con buen promedio y disciplinada.
+                </p>
+                <p>
+                    <strong>Bachillerato, ENP 7 UNAM Ezequiel A. Chávez.</strong><br>
+                    Agosto 2018 – abril 2021<br>
+                    Estudiante destacada.
+                </p>
+            </div>
+
+            <div class="content hobbies" id="hobbies">
+                <h2>Mis hobbies/gustos</h2>
+                <p>
+                    <strong>MMA – Artes Marciales Mixtas</strong><br>
+                    He practicado artes marciales mixtas desde que tengo 14 años, 3 veces por semana y como pasatiempo.
+                </p>
+                <p>
+                    <strong>Yoga</strong><br>
+                    Me gusta tener mis momentos de relajación para poder organizar mejor mis ideas al momento de tranquilizar mis emociones. Con media de 1 hora al día.
+                </p>
+                <p>
+                    <strong>Bailar</strong><br>
+                    Lo hago todo el tiempo, aunque a veces si tengo horarios para hacerlo, ya que distrae, desestresa y libera mi mente.
+                </p>
+            </div>
+
+            <div class="content skills" id="skills">
+                <h2>Habilidades</h2>
+                <p><strong>Soft skills</strong><br>
+                    <li>Trabajo en equipo</li>
+                    <li>Responsabilidad</li>
+                    <li>Atención al cliente</li>
+                    <li>Motivación</li>
+                    <li>Liderazgo</li>
+                    <li>Organización</li>
+                </ul>
+                </p>
+                <p><strong>Idiomas</strong><br>
+                    Inglés básico
+                </p>
+                <p><strong>Conocimientos</strong><br>
+                    <li>Lógica de programación</li>
+                    <li>Manejo de lenguaje C</li>
+                    <li>Manejo de lenguaje Java</li>
+                    <li>Desarrollo de páginas web</li>
+                </ul>
+                </p>
+            </div>
+
+            <div class="content experience-details" id="experience-details">
+                <h2>Experiencia laboral</h2>
+                <p>
+                    <strong>Mary Kay - Consultora</strong><br>
+                    Abril 2021 - Presente<br>
+                    Venta de productos Mary Kay, impartición del buen cuidado de la piel y arreglo personal.
+                </p>
+            </div>
+
+            <div class="content certification-details" id="certification-details">
+                <h2>Certificaciones</h2>
+                <p>
+                    <strong><li>Certificación Scrum Fundamentals</strong>
+                </p>
+            </div>
+
+            <div class="content contact" id="contact">
+                <h2>Medios de contacto</h2>
+                <p>
+                    <strong>TELÉFONO:</strong> 55 3525 1786<br>
+                    <strong>CORREO ELECTRÓNICO:</strong> mayela05@gmail.com
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

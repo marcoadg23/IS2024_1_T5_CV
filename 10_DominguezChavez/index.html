@@ -1,0 +1,346 @@
+-*<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Currículum</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    section {
+      display: none;
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2, h3 {
+      color: #333;
+      
+    }
+
+    h1{
+        color: #ddd;
+    }
+
+    p {
+      color: #555;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .tab {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 10px;
+      cursor: pointer;
+      background-color: #eee;
+      border-radius: 5px;
+    }
+
+    .tab:hover {
+      background-color: #ddd;
+    }
+
+    .active {
+      background-color: #333;
+      color: white;
+    }
+
+    .about-me-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .about-me-text {
+      flex: 1;
+      padding-left: 20px;
+    }
+
+    .study-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .study-text {
+      flex: 1;
+      padding-left: 200px;
+    }
+
+    .social-icons {
+      display: flex;
+      margin-top: 10px;
+    }
+
+    .social-icon {
+      margin-right: 10px;
+    }
+    
+    #misHobbies {
+        /* Ajusta según sea necesario */
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+        .hobbies-container {
+        display: flex;
+    }
+
+        .hobbies-left,
+        .hobbies-right {
+        flex: 1;
+        padding: 0 10px;
+    }
+
+        .hobbies-left {
+        border-right: 1px solid #ddd; /* Línea divisoria entre las columnas */
+    }
+
+    #misAptitudes {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #misAptitudes ul {
+        list-style-type: disc; /* Estilo de viñeta (puedes usar 'circle', 'square', etc.) */
+        padding-left: 20px; /* Ajusta según sea necesario */
+        }
+
+        #misAptitudes li {
+        margin-bottom: 8px;
+        }
+
+    #mediosdeContacto{
+        /* Ajusta según sea necesario */
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+        .contacto-container {
+        display: flex;
+    }
+
+        .contacto-left,
+        .contacto-right {
+        flex: 1;
+        padding: 0 10px;
+    }
+
+        .contacto-left {
+        border-right: 0px solid #ddd; /* Línea divisoria entre las columnas */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jesús Abner Domínguez Chávez</h1>
+    <p>Ingeniero en Computación</p>
+  </header>
+
+  <div>
+    <div class="tab" onclick="showTab('sobreMi')">Sobre mí</div>
+    <div class="tab" onclick="showTab('misEstudios')">Mis estudios</div>
+    <div class="tab" onclick="showTab('misHobbies')">Mis hobbies/gustos</div>
+    <div class="tab" onclick="showTab('misAptitudes')">Mis aptitudes</div>
+    <div class="tab" onclick="showTab('mediosDeContacto')">Contacto</div>
+  </div>
+
+  <section id="sobreMi">
+    <div class="about-me-container">
+      <div>
+        <img src="profpic.jpeg" alt="Tu Foto" style="border-radius: 50%;" width="400px" height="550px">
+        <div class="social-icons">
+          <a href="url_de_tu_red_social" target="_blank" class="social-icon">
+            <!-- Icono de red social, por ejemplo, un ícono de Facebook -->
+            <img src="" alt="">
+          </a>
+          <!-- Puedes agregar más iconos de redes sociales según sea necesario -->
+        </div>
+      </div>
+      <div class="about-me-text">
+        <h2>Sobre mí</h2>
+        <p>Nacido el 7 de Noviembre de 2003 en la Ciudad de México.</p>
+        <p>Soy una persona enfocada en el trabajo, en el estudio y en todo lo que me pueda ayudar a mi desarrollo personal.</p>
+        <p>Siempre busco las mejores oportunidades en todos los sentidos las cuales me permitan facilitarme el procedimiento en cualquier ámbito.</p>
+        <p>El trabajo en equipo para mi es importante porque siempre ayuda el poder aprender de otras personas con diferentes mentalidades.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="misEstudios">
+    <div class="study-container">
+        <div>
+            <img src="logo.png" alt="Logo UNAM" width="380px" height="550px">
+        </div>
+    
+        <div class="study-text">
+            <h2>Mis estudios</h2>
+                <ul>
+                <li>
+                    <h3>Educación Superior</h3>
+                    <p>Universidad Nacional Autónoma de México</p>
+                    <p>Facultad de Ingeniería</p>
+                    <p>Ingenieria en Computación</p>
+                    <p>Cursando actualmente 5to semestre</p>
+                    <p>Generación 2021</p>
+                    <h3>Idiomas</h3>
+                    <p>Español: Idioma Nativo</p>
+                    <p>Ingles: Intermedio B2</p>
+                    <h3>Certificados</h3>
+                    <p>Cambridge English: Key (KET)</p>
+                    <p>Cambridge English: Preliminary (PET)</p>
+                    <p>Cambridge English: First (FCE)</p>
+                    <p>MATLAB Onramp</p>
+                    <p>Introduction to Symbolic Math with MATLAB</p>
+                </li>
+                <!-- Puedes agregar más información educativa según sea necesario -->
+                </ul>
+        </div>
+    </div>
+  </section>
+
+  <section id="misHobbies">
+    <div>
+        <img style="border: 1px solid; color: black;" src="collage.png" alt="collagefotos" width="770px" height="250px" >
+    </div>
+    <div class="hobbies-container">
+        <div class="hobbies-left">
+          <h2>Hobbies</h2>
+          <p>Mi principal hobbie, el cual que me ocupa la mayor parte de mi dia, es hacer 
+            transmisiones en vivo en la plataforma Twitch con la pequeña 
+            comunidad que he estado generando desde hace 2 años.</p>
+            <p>Otro de mis hobbies son los videojuegos, estos me ayudan 
+            a desconectarme de todo mi día y asi poder relajarme algunas horas.</p>
+            <p>El manejar es una actividad la cual ya hasta considero como hobbie la cual 
+                desde pequeño comencé a realizar con motos de gasolina pequeñas o carros 
+                pequeños para manejar en ambientes cerrados. En la actualidad, día con día 
+                manejo alrededor de 3 horas y aveces busco excusas para salir y seguir 
+                manejando. 
+            </p>
+        </div>
+        <div class="hobbies-right">
+          <h2>Gustos</h2>
+          <p>Me gusta mucho viajar y conocer nuevos lugares, siempre busco 
+            la oportunidad de poder salir a cualquier lugar sin importar la distancia.</p>
+            <p>Me gustan varios deportes y de vez en cuando los practico, por
+                ejemplo, el futbol, me gusta verlo y tambien jugarlo junto a mis amigos
+                en una liga pequeña o tambien la Formula 1, la cual la veo y llegó a
+                jugar mucho tiempo el videojuego F1 2023 con su respectivo volante.
+            </p>
+            <p>El mundo de la música y del audio es algo que me gusta mucho que compartó
+                con mi padre. Comunmente buscamos musica nueva para poder escuchar y 
+                poder refrescar el oido con sonidos nuevos.
+                De igual forma, con mi padre hasta cierto punto tenemos un interés fuerte
+                en el audio, donde disfrutamos escuchar y aveces comprar diferentes tipos 
+                de bocinas, amplificadores y más cosas relacionadas al audio.
+            </p>
+        </div>
+    </div>
+  </section>
+
+  <section id="misAptitudes">
+    <h2>Mis Aptitudes</h2>
+    <ul>
+        <li>Lenguajes de programación</li>
+        <p>C, Java, Python, Ensamblador x86</p>
+        <p>MATLAB, HTML, CSS, JavaScript</p>
+        <li>Idiomas</li>
+        <p>Español Nativo</p>
+        <p>Ingles Intermedio</p>
+        <li>Trabajo en Equipo</li>
+        <li>Empatico</li>
+        <li>Habilidades Comunicativas</li>
+        <li>Proactivo</li>
+        <li>Gestión de Equipos</li>
+        <li>Toma de Decisiones</li>
+    </ul>
+  </section>
+
+  <section id="mediosDeContacto">
+    <div class="contacto-container">
+        <div class="contacto-left">
+            <h2>Contacto</h2>
+            <ul>
+            <li>Correo Electrónico: abnerdch@gmail.com</li>
+            <li>Correo Electrónico Alterno: abnerdch@hotmail.com</li>
+            <li>Teléfono: (+52) 55-3499-2858</li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/abner_dguez/" target="_blank" class="social-icon">
+                <img src="igicon.png" alt="Instagram" width="40px" height="40px">
+                </a>
+                <a href="https://www.linkedin.com/in/abner-dominguez-chavez-087a93235/" target="_blank" class="social-icon">
+                    <img src="lin.webp" alt="LinkedIn" width="40px" height="40px">
+                </a>
+                <a href="https://twitter.com/_iduffz/" target="_blank" class="social-icon">
+                    <img src="twitter.png" alt="Twitter" width="40px" height="40px">
+                </a>
+            </div>
+        </div>
+        <div class="contacto-right">
+            <img src="qr.png" alt="qr" width="400px" height="400px">
+        </div>
+        
+    </div>
+    
+  </section>
+
+  <script>
+    function showTab(tabId) {
+        // Oculta todas las secciones
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {section.style.display = 'none';});
+
+        // Muestra la sección correspondiente al tab seleccionado
+        document.getElementById(tabId).style.display = 'block';
+
+        // Resalta el tab activo
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(tab => {tab.classList.remove('active');});
+
+        document.querySelector(`[data-tab="${tabId}"]`).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>

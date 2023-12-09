@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto de Carlos Enrique Figueroa Solano">
+    <title>Contacto</title>
+
+    <link rel="preload" href="../CSS/normalize.css">
+    <link rel="styleSheet" href="../CSS/styles.css" as="style"> 
+    <link rel="styleSheet" href="../CSS/normalize.css" as="style">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="../IMG/icon.jpeg">
+    <script language="JavaScript" type="text/javascript" src="../JS/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Carlos Enrique Figueroa</h1>
+    </header>
+    <!-- Barra de navegación-->
+    <div class="navBG">
+        <nav  class="navP"> 
+            <a href="../index.html" >Inicio</a>
+            <a href="about.html">Sobre mí</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
+    <main class="contenedor c_color">
+        <h2>Contacto</h2>
+        <form class="formulario">
+            
+            <fieldset>
+                <legend>Contáctame llenando con tus datos</legend>
+                <div class="contenedor_campos">
+                    <div class="campo">
+                        <label>Nombre</label>
+                        <input type="text" placeholder="Nombre">
+                    </div>
+                    <div class="campo">
+                        <label>Teléfono</label>
+                        <input type="tel" placeholder="Teléfono">
+                    </div>
+                    <div class="campo">
+                        <label>Correo</label>
+                        <input type="email" placeholder="Correo">
+                    </div>
+                    <div class="campo">
+                        <label>Mensaje</label>
+                        <textarea placeholder="Mensaje"></textarea>
+                    </div>
+                    <div >
+                        <input  type="submit" value="Enviar" onClick="enviado(); regresar();">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

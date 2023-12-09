@@ -1,0 +1,115 @@
+﻿*{
+    background-color: lightgoldenrodyellow;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: black;
+    font-family: Georgia;
+    font-weight: 400;
+    font-style: normal;
+    margin: 20px;
+    font-size: 40px;
+}
+
+h2 {
+    color: black;
+    font-family: Georgia;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+h3 {
+    color: black;
+    font-family: Georgia;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+h4 {
+    color: black;
+    font-family: Georgia;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+h5 {
+    color: black;
+    font-family: Georgia;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+h6 {
+    color: black;
+    font-family: Georgia;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+button {
+    background-color: rgb(232, 87, 87);
+    color: rgb(224, 236, 73);
+    width: 150px;
+    height: 80px;
+    font-size: 30px;
+    font-style: italic;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+img {
+    max-width: 330px;
+    max-height: 380px;
+    float: left;
+    margin-right: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+
+}
+
+body {
+    min-height: 100vh;
+    
+}
+
+.wrapper {
+    margin: 20px;
+    width: 70%;
+}
+
+.texto {
+    font-size: 30px;
+    text-align: justify;
+}
+
+.texto2{
+    font-size: 30px;
+    text-align: justify;
+    margin: 20px;
+}
+
+.texto3 {
+    font-size: 30px;
+    text-align: justify;
+    margin: 20px;
+}
+
+.texto4 {
+    font-size: 30px;
+    text-align: justify;
+    margin: 20px;
+}
+
+.texto5 {
+    font-size: 30px;
+    text-align: justify;
+    margin: 20px;
+}

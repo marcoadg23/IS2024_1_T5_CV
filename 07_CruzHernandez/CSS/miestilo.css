@@ -1,0 +1,150 @@
+.body{
+	display: flex;
+}
+
+.Presentacion{	
+	height: 300px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.Presentacion img{
+	height: 100%;
+	width: 100%;
+}
+
+.Fotomia{
+	height: 300px;
+	width: 350px;
+	background-color: #FFFFFF;
+	border: 5px solid #fa001f;
+	position: absolute;
+      	top: 50%;
+      	left: 50%;
+      	transform: translate(-50%, -50%);
+}
+
+.Fotomia img{
+	position: absolute;
+	top: 50%;
+      	left: 50%;
+      	transform: translate(-50%, -50%);
+      	height: 100px;
+      	width: 100px;
+}
+.Descripcion{
+	text-align: center;
+   	padding: 20px;
+   	right: 0px;
+   	background-color: #fff;
+}
+.ESPACIO{
+	height: 550px;
+      	width: 100px;
+      	background-color: #fff;
+}
+
+.Datos{
+	text-align: center;
+   	padding: 20px; 
+}
+.Facebook{
+	display: inline-block;
+    	color: #3b5998;
+   	font-size: 25px;
+   	border: none;
+      	position: absolute;
+      	text-decoration: none;
+	top: 75%;
+      	left: 30%; 
+}
+
+.instagram{
+	display: inline-block;
+    	color: #3b5998;
+   	font-size: 25px;
+   	border: none;
+      	position: absolute;
+      	text-decoration: none;
+	top: 75%;
+      	left: 60%; 
+}
+.Pasatimepo1{
+	height: 300px;
+	width: 100%;
+	right:0;
+	background-color: #fff;
+}
+
+.Primer {
+      	font-size: 50px;
+      	position: absolute;
+	top: 75;
+      	left: 50%; 
+}
+.Segundo {
+      	font-size: 50px;
+      	position: absolute;
+	top: 75;
+      	left: 10%; 
+}
+
+.Tercero {
+      	font-size: 50px;
+      	position: absolute;
+	top: 75;
+      	left: 90%; 
+}
+
+.Cuarto {
+      	font-size: 50px;
+      	position: absolute;
+	top: 135%;
+      	left: 30%; 
+}
+
+
+.Quinto{
+      	font-size: 50px;
+      	position: absolute;
+	top: 135%;
+      	left: 70%; 
+}
+.carousel__elemento img{
+	height: 310px;
+	width: 700px;
+}
+.carousel__elemento p{
+	text-align: center;
+	font-size: 16px;
+}
+.carousel__anterior{
+	display: none;
+}
+.carousel__siguiente{
+	display: none;
+}
+.carousel__lista{
+	overflow: hidden;
+}
+
+.slider1{
+	height: 400px;
+	width: 100%;
+	position: absolute;
+	right: 0;
+	background-color: #fff;	
+}
+#imagen2{
+	position: relative; 
+     	left: 50%; 
+        top: 20px; 
+}
+#imagen1{
+	position: relative; 
+     	left: 20%; 
+        top: 20px; 
+}
+
+

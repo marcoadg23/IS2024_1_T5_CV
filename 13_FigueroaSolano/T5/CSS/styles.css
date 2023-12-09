@@ -1,0 +1,237 @@
+:root{
+    --blanco:#ffff;
+    --negro:#000000;
+    --cafeOscuro:#803a0b;
+    --crema:#fffff6;
+    --rojo:#d62e2e;
+    --cafe:#b95410;
+    --fuentePrinciapl:3.8 rem;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+    padding: 1rem;
+}
+
+html{
+    font-size: 62.5%; 
+}
+
+body{ 
+        background-color: var(--cafeOscuro);
+        font-size: 16px;
+        font-family:"karla",sans-serif;
+}
+.titulo{
+    text-align:center;
+    font-size: 4rem;
+}
+.titulomod{
+    font-size: 3rem;
+}
+
+/*          Tipografía          */
+h1{
+    font-size: 3.5rem;
+    color: var(--crema);
+}
+
+h2{
+    font-size: 2.5rem;
+    background-color: var(--cafe);
+    color: var(--crema);
+    border-radius: 1rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 2.5rem;
+    color: var(--crema);
+}
+
+p{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+h1,h2,h3,h4,p{
+    text-align: center;
+}
+
+
+
+/**         Navegación          **/
+
+.navBG{
+    background-color: var(--cafe);
+}
+
+
+.navP{
+    display:flex; 
+    flex-direction: row;
+    justify-content:space-evenly;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.navP a{
+    color:var(--blanco);
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem; 
+    text-decoration: none; 
+}
+
+.navP a:hover{
+    background-color: var(--cafeOscuro);
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+/**         Banner          **/
+
+.banner{
+    background-image: url(../IMG/banner.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 500px;
+    position: relative;
+}
+
+.contenidoBanner{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.658);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    color: var(--blanco)
+}
+
+.boton{
+    background-color: var(--cafe);
+    color: var(--crema);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    text-decoration: none;
+    width: 10rem;
+    height: 2.5rem;
+    text-align:center;
+    border-radius: 1rem;
+}
+.boton a:hover{
+    background-color: var(--cafeOscuro);
+    cursor: pointer;
+}
+
+/*          Datos           */
+.pfp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.datos{
+    display:flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    
+}
+
+
+.dato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--crema);
+    border-radius: 1rem;
+}
+
+.dato h3{
+    color: black;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.dato p{
+    line-height: 2;
+}
+
+.icono .icon{
+    height: 6rem;
+    width: 6rem;
+    background-color: var(--crema);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+
+/*          Contacto            */
+
+
+    .contenedor_campos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto auto 20rem;
+    column-gap: 1.2rem;
+    row-gap: 1rem;
+    }
+    
+    .campo:nth-child(3), .campo:nth-child(4){ 
+    grid-column: 1/3;
+    }
+
+
+.formulario{
+    background-color: var(--crema);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 1rem; 
+    }
+
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    text-align:center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    font-weight: 600;
+    margin: 0.5rem;
+    display: block;
+}
+
+.campo input{
+    width: 85%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.campo textarea{
+    height: 14rem;
+    width: 95%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}

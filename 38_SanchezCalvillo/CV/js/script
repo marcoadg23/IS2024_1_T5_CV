@@ -1,0 +1,24 @@
+// Contenido de script.js
+var activeSection = null;
+
+function toggleDetails(className) {
+    var details = document.querySelector('.' + className);
+
+    details.classList.add('active');
+
+    // Desplazar la pantalla hacia la sección activa
+    details.scrollIntoView({ behavior: 'smooth' });
+
+    if (details === activeSection) {
+        // Si se presiona el mismo botón, ocultar la sección
+        details.classList.remove('active');
+        activeSection = null;
+    } else {
+        // Ocultar la sección activa actual y mostrar la nueva
+        if (activeSection) {
+            activeSection.classList.remove('active');
+        }
+        details.classList.add('active');
+        activeSection = details;
+    }
+} 
